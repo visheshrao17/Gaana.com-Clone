@@ -27,19 +27,19 @@ const Top50=()=>{
     },[])
 
     return(
-        <div className='bg-black text-white bg-black  flex flex-col p-10'>
-                <div className='trending '>
+        <div className='bg-black text-white '>
+                <div className='container mx-auto px-4 py-8'>
                     <h1 className='text-2xl font-bold text-neutral-300 px-3 py-2'>Top 50 Songs of this week</h1>
 
-                    <div className='flex flex-row overflow-scroll scroll-smooth transition-[scroll] duration-[0.3s] ease-[ease-in-out]' >
+                    <div className='flex overflow-x-auto gap-4 bg-opacity-0' >
                         {top50.map((item) => {
                             return (
                                 <div
-                                    className='m-1'
+                                    className='m-1 p-1.5'
                                     onClick={() => {
                                         navigate(`/song/${item._id}`)
                                     }}>
-                                    <img src={item.thumbnail} alt={(item.name) + 'thumbnail'} className='h-[220px] w-[220px] max-w-none' />
+                                    <img src={item.thumbnail} alt={(item.name) + 'thumbnail'} className='h-[220px] w-[220px] max-w-none rounded-lg' />
                                     <h2 className=' font-[500]'>{item.title}</h2>
                                     {item.artist.map((items) => {
                                         return (

@@ -27,11 +27,11 @@ const FetchTrending=()=>{
     },[])
 
     return(
-        <div  className='text-white bg-black flex flex-col p-10'>
-                <div className='trending '>
-                    <h1 className='text-base font-bold text-neutral-300 px-3 py-2'>Trending Songs</h1>
+        <div  className='bg-black text-white'>
+                <div className='container mx-auto px-4 py-8'>
+                    <h1 className='text-2xl font-bold text-neutral-300 px-3 py-2'>Trending Songs</h1>
 
-                    <div className='flex flex-row overflow-scroll scroll-smooth transition-[scroll] duration-[0.3s] ease-[ease-in-out]' >
+                    <div className='flex overflow-x-auto gap-4 bg-opacity-0'>
                         {trending.map((item) => {
                             return (
                                 <div

@@ -40,7 +40,7 @@ function SignInForm({setIsLogin, setToken}) {
     };
 
     return (
-        // <div className="bg-[url('https://d3dyfaf3iutrxo.cloudfront.net/general/upload/65dd66ed06d1460aaf70cd440700c909.png')] bg-cover bg-center h-screen w-screen">
+      
             <>
                 <form onSubmit={handleSignIn} className="drop-shadow-sm w-[400px] flex flex-col px-4 py-2 mt-5 max-md:px-5 max-md:max-w-full">
                     <img src={Logo} alt="Gaana Logo" className="h-12 flex justify-center mx-auto " />
@@ -51,14 +51,14 @@ function SignInForm({setIsLogin, setToken}) {
                     type="email"
                     placeholder="Email"
                     onChange={(e) => setEmail(e.target.value)}
-                    className="border border-red-500  flex flex-col justify-center px-1.5 py-1.5 mt-1.5 bg-black bg-opacity-0"
+                    className="border border-red-500  flex flex-col justify-center px-1.5 py-1.5 mt-1.5 bg-black bg-opacity-0 text-white"
                     />
                     <input
                     id="password"
                     type="password"
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)}
-                    className="border border-red-500 flex flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full rounded-md"
+                    className="border border-red-500 flex flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full rounded-md text-white"
                     />
                     <button
                     type="submit"

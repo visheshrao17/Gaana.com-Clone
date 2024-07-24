@@ -48,7 +48,7 @@ function SignUpForm({setToken}) {
                 type="name"
                 placeholder="Name"
                 value={name}
-                className="border border-red-500 flex mt-5 flex-col justify-center px-1.5 py-1.5 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full "
+                className="border border-red-500 flex mt-5 flex-col justify-center px-1.5 py-1.5 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full text-white "
                 onChange={(e) => setName(e.target.value)}
             />
             <input
@@ -56,7 +56,7 @@ function SignUpForm({setToken}) {
                 type="email"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
-                className="border border-red-500 flex mt-5 flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full "
+                className="border border-red-500 flex mt-5 flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full text-white "
             />
 
            

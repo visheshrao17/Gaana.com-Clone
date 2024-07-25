@@ -65,7 +65,7 @@ function SignUpForm({setToken}) {
                 type="password"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
-                className="border border-red-500  mt-5 flex flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full "
+                className="border border-red-500  mt-5 flex flex-col justify-center px-1.5 py-1 mt-1.5 bg-black bg-opacity-0 max-md:max-w-full text-white "
             />
 
             <button

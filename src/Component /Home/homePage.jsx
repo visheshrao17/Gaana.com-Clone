@@ -80,7 +80,7 @@ const SongList = ({ title, endpoint }) => {
           {songs.map((song) => (
             <div
               key={song._id}
-              className="relative group/card flex-shrink-0 bg-neutral-900 p-4 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl"
+              className="relative group/card flex-shrink-0 bg-neutral-600 p-4 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl"
               onClick={() => navigate(`/song/${song._id}`)}
             >
               <div className="relative">
@@ -90,7 +90,7 @@ const SongList = ({ title, endpoint }) => {
                   className="h-[220px] w-[220px] object-cover rounded-lg shadow-md"
                 />
                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-opacity rounded-lg">
-                  <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold transform transition-transform hover:scale-105 flex items-center gap-2">
+                  <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full font-bold transform transition-transform hover:scale-105 flex items-center gap-2">
                     <span className="text-2xl">▶</span>
                     Play
                   </button>
